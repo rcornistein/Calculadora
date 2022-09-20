@@ -1,0 +1,95 @@
+
+
+
+  .fundo-mod {
+    background-color: rgb(23, 162, 184);
+        
+  }
+
+  .margem {
+    padding: 1%;
+    border-radius: 1px;
+    
+  }
+
+
+
+#display {
+  background: #bcbcbc;
+  padding: 8px;
+  margin:16px 12px 10px 16px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius:1px;
+
+  
+}
+/*
+#result p{
+font-size:1.3em;
+text-align: right;
+}
+*/
+#previa{
+  text-align: left;
+  height: 8px; 
+}
+#result{
+  font-size:1.3em;
+  text-align: right;
+  height: 13px; 
+  }
+
+table {
+  table-layout: fixed ;
+
+}
+table td {
+  
+
+  padding: 5px ;
+}
+
+#igual{
+height: 74px;
+/*background-color: forestgreen;
+border-color: transparent;*/
+}
+/*
+#AC{
+
+  background-color:darkorange;
+  border-color: transparent;
+  
+  }
+  
+  #MR{
+
+    background-color:red;
+    border-color: transparent;
+    
+    }
+*/
+
+#historico{
+  font-family: 'Press Start 2P', cursive;
+}
+#titulo{
+  font-family: 'Lobster', cursive;
+  visibility:hidden;
+
+}
+.borda{
+  -webkit-box-shadow: 0 3px 9px black;
+  box-shadow: 0 3px 9px black;
+  border-radius: 3px;
+  -webkit-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.centro {
+  width:100%;
+  height:100%;
+  }
+
+ 

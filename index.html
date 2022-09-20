@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Calculadora</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <script src="https://kit.fontawesome.com/4e4883d126.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/calculadora.js"></script>
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.8.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+    
+  <body>
+    <style>
+        
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 justify-text-center" id="titulo" >
+                <h3 >  Calculadora           </h3>
+            </div>  
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row align-items-center">
+            <div class="fundo-mod margem borda">
+                <div id="display">
+                    <div ><p id="result" value="0">0</p></div>
+                    <div ><p id="previa" value="0">  </p></div>
+                 </div>
+
+            <div class="container" >
+            <table >
+                <tr>
+                    <td><input type="button" class=" btn-block" onclick="boton(value,name,id);" id="(" name=" ( " value="("></td>
+                    <td><input type="button" class="btn-block" id=")" name=")"  onclick="boton(value,name,id);" value=")"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="factorial(" name="factorialize(" value=" x!"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="cuad(" name="potencia(2," value=" x² "></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="raiz(" name="Math.sqrt(" value="√"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="raiz_n_(" name="raiz_n(" value="√n "></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="sin(" name="Math.sin(" value="sin"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);"  id="cos(" name="Math.cos(" value="cos"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);"  id="tan(" name="Math.tan" value="tan"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);"  id="cubo(" name="potencia(3," value="x³"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="," name="," value=","></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="^" name="**" value="xⁿ"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn-block" id="1"  onclick="boton(value,name,id);" name="1" value="1"></td>
+                    <td><input type="button" class="btn-block" id="2" onclick="boton(value,name,id);" name="2" value="2"></td>
+                    <td><input type="button" class="btn-block" id="3" onclick="boton(value,name,id);" name="3" value="3"></td>
+                    <td><input type="button" class="btn-block" id="/" onclick="boton(value,name,id);" name="/" value="/"></td>
+                    <td><input type="button" class="btn-block" id="%" onclick="boton(value,name,id);"  name="*(1/100)*" value="%"></td>
+                    <td><input type="button" class="btn-block" id="ln(" onclick="boton(value,name,id);" name="Math.log(" value="ln"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn-block" id="4" onclick="boton(value,name,id);" name="4" value="4"></td>
+                    <td><input type="button" class="btn-block" id="5" onclick="boton(value,name,id);" name="5" value="5"></td>
+                    <td><input type="button" class="btn-block" id="6" onclick="boton(value,name,id);" name="6" value="6"></td>
+                    <td><input type="button" class="btn-block" id="*" onclick="boton(value,name,id);" name="*" value="*"></td>
+                    <td><input type="button" class="btn-block" id="log" onclick="boton(value,name,id);" name="Math.log10(" value="log"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="e" name="Math.E" value="e"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn-block" id="7" onclick="boton(value,name,id);" name="7" value="7"></td>
+                    <td><input type="button" class="btn-block" id="8" onclick="boton(value,name,id);" name="8" value="8"></td>
+                    <td><input type="button" class="btn-block" id="9" onclick="boton(value,name,id);" name="9" value="9"></td>
+                    <td><input type="button" class="btn-block" id="-" name="-" onclick="boton(value,name,id);" value="-"></td>
+                    <td><input type="button" class="btn-block" id="AC" name=" AC" onclick="reset();" value="AC"></td>
+                    <td rowspan=2><input type="button" class="btn-block" id="igual" name="=" onclick="btn_igual();" value="="></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn-block" id="." onclick="boton(value,name,id);" name="." value="."></td>
+                    <td><input type="button" class="btn-block" id="0" onclick="boton(value,name,id);" name="0" value="0"></td>
+                    <td><input type="button" class="btn-block" onclick="boton(value,name,id);" id="π" name="Math.PI" value=" π "></td>
+                    <td><input type="button" class="btn-block" id="+" name="+" onclick="boton(value,name,id);" value=" + "></td>
+                    <td><input type="button" class="btn-block   id="MR" name="MR" value=" MR"></td>
+                </tr>            
+                
+                
+                
+            </table>   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
+
